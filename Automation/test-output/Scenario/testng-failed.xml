@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Scenario]" verbose="2">
+  <test thread-count="5" name="TC1(failed)" verbose="2">
+    <classes>
+      <class name="DemoQA.Automation.Testscript">
+        <methods>
+          <include name="Checkbox"/>
+          <include name="LaunchChrome"/>
+          <include name="CloseBrowser"/>
+          <include name="Elements"/>
+        </methods>
+      </class> <!-- DemoQA.Automation.Testscript -->
+    </classes>
+  </test> <!-- TC1(failed) -->
+</suite> <!-- Failed suite [Scenario] -->

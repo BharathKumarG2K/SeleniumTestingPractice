@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Scenario" verbose="4"> 
+<listeners>
+<listener class-name="DemoQA.Automation.Listener"></listener>
+</listeners>
+<test name = "TC1">
+<classes>
+<class name = "DemoQA.Automation.Testscript"></class>
+</classes>
+</test>
+</suite>
