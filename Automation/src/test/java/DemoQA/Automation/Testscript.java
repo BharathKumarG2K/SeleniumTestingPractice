@@ -38,10 +38,10 @@ public class Testscript {
 		driver.get("https://demoqa.com/elements");
 		String PageTitle = driver.getTitle();
 		if(PageTitle.equalsIgnoreCase("DEMOQA") ) {
-			System.out.println("DEMO QA page is loaded properly");
+			Reporter.log("DEMO QA page is loaded properly");
 		}
 		else {
-			System.out.println("Page isnot loaded properly");
+			Reporter.log("<br>Page isnot loaded properly");
 		}
 	}
 	@AfterTest
@@ -76,10 +76,10 @@ public class Testscript {
 		radiobtnpage.TabRadioBtn(driver).click();
 		radiobtnpage.RadioBtn(driver,"Yes").click();
 		String result = radiobtnpage.TextResult(driver).getText();
-		System.out.println(result);
+		Reporter.log(result);
 		radiobtnpage.RadioBtn(driver,"Impressive").click();
 		String result1 = radiobtnpage.TextResult(driver).getText();
-		System.out.println(result1);			
+		Reporter.log("<br>"+result1);			
 	}
 	@Test(priority=4)
 	public void Buttons() throws IOException {
@@ -113,7 +113,7 @@ public class Testscript {
 		}
 		int MinVal = Collections.min(NumberList);
 		String SectorName = WebTable.MinSector(driver, MinVal).getText();
-		System.out.println("The Minium number of Deals is "+ MinVal + "and the Sector is " + SectorName);
+		Reporter.log("The Minium number of Deals is "+ MinVal + "and the Sector is " + SectorName);
 	}
 	@Test (priority =6)
 	public void IFrames() throws InterruptedException {
