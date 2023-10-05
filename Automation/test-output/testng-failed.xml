@@ -6,7 +6,7 @@
       <class name="DemoQA.Automation.Testscript">
         <methods>
           <include name="LaunchChrome"/>
-          <include name="IFrames"/>
+          <include name="WindowHandle"/>
           <include name="CloseBrowser"/>
         </methods>
       </class> <!-- DemoQA.Automation.Testscript -->
